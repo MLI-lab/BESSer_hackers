@@ -33,8 +33,8 @@ class BESSOptimizer:
         # Battery specifications (assuming 1 MWh nominal capacity for calculations)
         self.battery_capacity_mwh = 1.0  # 1 MWh
         self.efficiency = 0.95  # Round-trip efficiency
-        self.min_soc = 0.1  # Minimum State of Charge
-        self.max_soc = 0.9  # Maximum State of Charge
+        self.min_soc = 0.0  # Minimum State of Charge
+        self.max_soc = 1.0  # Maximum State of Charge
         self.investment_cost = 200  # EUR/kWh
 
     def load_data(self):
